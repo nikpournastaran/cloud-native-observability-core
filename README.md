@@ -28,9 +28,6 @@ The infrastructure side handles the automation:
 
 ---
 
----
----
-
 ## Local Setup
 
 ### Prerequisites
@@ -78,4 +75,4 @@ I hold two Master's degrees—one in **Statistics and Applications** and another
 
 I designed this pipeline to solve real-world problems with microservices, CI/CD, and Infrastructure as Code. My ultimate goal is to deploy these optimized setups in companies facing server bottlenecks, high-concurrency traffic, or infrastructure scaling challenges. I want to help teams stabilize their deployments, reduce cloud overhead, and achieve high system observability.
 
-I have full work authorization, am open to relocation, and am ready for new full-time challenges!
+I have full work authorization, am open to relocation, and am ready for new full-time challenges! :)
