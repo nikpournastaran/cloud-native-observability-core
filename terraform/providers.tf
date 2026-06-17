@@ -1,4 +1,3 @@
-# ۱. تعیین اینکه به کدام سرویس ابری نیاز داریم
 terraform {
   required_providers {
     azurerm = {
@@ -8,7 +7,6 @@ terraform {
   }
 }
 
-# ۲. پیکربندی پرووایدر آژور
 provider "azurerm" {
   features {}
 }
