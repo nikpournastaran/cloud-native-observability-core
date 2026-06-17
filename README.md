@@ -70,14 +70,11 @@ terraform plan
 ```
 
 
-## About Me
----
 
-## About Me
 ---
-
 ## About Me
-I hold two Master's degrees—one in **Statistics and Applications** and another in **Data Science**. While my academic foundation is deeply rooted in data, my true passion lies in cloud computing and infrastructure architecture. Because of this drive, I have spent immense hands-on effort mastering cloud tools, which allows me to confidently step into the world as a **Cloud and Backend Engineer**. 
+
+I hold two Master's degrees—one in **Statistics and Applications** and another in **Data Science**. While my academic foundation is deeply rooted in data, my true passion lies in cloud computing and infrastructure architecture. Because of this drive, I have spent immense hands-on effort mastering cloud tools, which allows me to confidently step into the world as a **Cloud and Backend Engineer** :) . 
 
 I designed this pipeline to solve real-world problems with microservices, CI/CD, and Infrastructure as Code. My ultimate goal is to deploy these optimized setups in companies facing server bottlenecks, high-concurrency traffic, or infrastructure scaling challenges. I want to help teams stabilize their deployments, reduce cloud overhead, and achieve high system observability.
 
