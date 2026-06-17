@@ -1,16 +1,15 @@
-# ۱. استفاده از ایمیج رسمی Go برای کامپایل کردن کد
+# 1. Use the official Golang alpine image for compiling
 FROM golang:1.26-alpine AS builder
+
 WORKDIR /app
 
-# ۲. کپی کردن فایل‌های مدیریت وابستگی
-COPY go.mod go.sum ./
-RUN go mod download
-
-# ۳. کپی کردن کدها و ساخت فایل اجرایی (Binary)
+# 2. Copy all files directly (including the local module cache initialized by go mod tidy)
 COPY . .
+
+# 3. Build the binary statically without fetching external dependencies online
 RUN CGO_ENABLED=0 GOOS=linux go build -o main .
 
-# ۴. استفاده از یک ایمیج فوق‌العاده سبک و خالی برای اجرای نهایی (ترفند حرفه‌ای)
+# 4. Use a lightweight alpine image for final execution
 FROM alpine:latest  
 WORKDIR /root/
 COPY --from=builder /app/main .
