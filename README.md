@@ -28,33 +28,57 @@ The infrastructure side handles the automation:
 
 ---
 
+---
+---
+
 ## Local Setup
 
 ### Prerequisites
-*   Docker Desktop
-*   Python 3.10+ / Go 1.26+
+* Docker Desktop
+* Python 3.10+ / Go 1.26+
 
 ### 1. Run the Python Backend (Port 8000)
-Run these commands from the root directory:
+Run these commands from the root directory of the project:
+
 ```bash
 docker build -t cloud-native-api .
-docker run -d -p 8000:8000 cloud-native-api
+docker run -d -p 8000:8000 cloud-native-api 
+```
 
-Check the API docs at: http://localhost:8000/docs
+* Check the live API docs here: [Local Swagger UI Documentation](http://localhost:8000/docs)
 
-2. Run the Go Agent (Port 8080)
-Navigate to the Go service folder:
+### 2. Run the Go Agent (Port 8080)
+Open a new terminal and navigate to the Go service folder:
 
+```bash
 cd go-backend
 docker build -t cloud-native-go-api .
 docker run -d -p 8080:8080 cloud-native-go-api
+```
 
-Check the live snapshot at: http://localhost:8080/api/v1/agent/snapshot
 
-Cloud Deployment (Azure)
-To test the infrastructure code locally and see what resources will be created on Azure:
+* Check the live telemetry snapshot at: [Local Swagger UI Documentation](http://localhost:8080/api/v1/agent/snapshot)
 
+
+## Cloud Deployment (Azure)
+To initialize Terraform, check the infrastructure graphs, and preview the resources that will be created on Azure:
+
+```bash
 cd terraform
 terraform init
 terraform plan
+```
 
+
+## About Me
+---
+
+## About Me
+---
+
+## About Me
+I hold two Master's degrees—one in **Statistics and Applications** and another in **Data Science**. While my academic foundation is deeply rooted in data, my true passion lies in cloud computing and infrastructure architecture. Because of this drive, I have spent immense hands-on effort mastering cloud tools, which allows me to confidently step into the world as a **Cloud and Backend Engineer**. 
+
+I designed this pipeline to solve real-world problems with microservices, CI/CD, and Infrastructure as Code. My ultimate goal is to deploy these optimized setups in companies facing server bottlenecks, high-concurrency traffic, or infrastructure scaling challenges. I want to help teams stabilize their deployments, reduce cloud overhead, and achieve high system observability.
+
+I have full work authorization, am open to relocation, and am ready for new full-time challenges!
